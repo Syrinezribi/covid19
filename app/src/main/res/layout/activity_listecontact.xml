@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/FireBrick">
+        <TextView
+            android:id="@+id/grd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="30dp"
+            android:text="@string/list"
+            ></TextView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            ></ImageView>
+    </FrameLayout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > <!-- nombre de colonnes -->
+
+    <TextView
+        android:id="@+id/textViewCol1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/util"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="4dp"
+        android:drawableLeft="@drawable/user"/>
+
+
+    <TextView
+        android:id="@+id/textViewCol2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adres"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        />
+    <TextView
+        android:id="@+id/textViewCol3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawableLeft="@drawable/email"
+        />
+    <TextView
+        android:id="@+id/textViewCol4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date1"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        />
+    <!--la liste de contacts est une liste dynamique en utilisant java et bd après!-->
+<!--contient les lignes des contactes qui sont déjà enregistrés!-->
+</LinearLayout>
+</LinearLayout>
